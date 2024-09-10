@@ -12,4 +12,9 @@ public class AmazncartApplication {
 		SpringApplication.run(AmazncartApplication.class, args);
 	}
 
+	@Bean
+	RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
+
 }
